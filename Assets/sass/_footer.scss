@@ -1,0 +1,23 @@
+@use "variables" as v;
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top:130px;
+
+    ul{
+        display: flex;
+        gap: 10px;
+        li{list-style: none;
+            a{
+                text-decoration: none;
+                img{
+                    max-width: 30px;
+                    width: 100%;
+                    height: 30px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
