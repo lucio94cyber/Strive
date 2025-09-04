@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="Assets/style/estilos.css">
     <link rel="shortcut icon" href="Assets/logo/logo.png" type="image/x-icon">
     <title>Strive</title>
@@ -53,36 +54,36 @@
 
         <section class="levantamiento">
         <div class="texto_levantamiento">
-        <h3>Fuerza en cada levantamiento</h3>
-        <p>Entrená al máximo nivel, superá tus límites y 
+        <h3 data-aos="flip-left" >Fuerza en cada levantamiento</h3>
+        <p data-aos="flip-left">Entrená al máximo nivel, superá tus límites y 
             transformá tu rendimiento con la técnica y el equipamiento adecuado.</p>
         </div>
-        <img src="./Assets/img/levantamiento.png" alt="levantamiento">
+        <img data-aos="flip-left" src="./Assets/img/levantamiento.png" alt="levantamiento">
     </section>
 
     <section class="clases">
         <h4>clases</h4>
         <div class="clases_fotos">
-            <div class="foto">
+            <div data-aos="flip-left" class="foto">
         <h5>levantamiento</h5>
         <img src="./Assets/img/levantamiento2.png" alt="levantamiento2">
         </div>
-        <div class="foto">
+        <div data-aos="flip-left" class="foto">
         <h5>crossfit</h5>
         <img src="./Assets/img/crossfit.png" alt="crossfit">
         </div>
 
-        <div class="foto">
+        <div data-aos="flip-left" class="foto">
         <h5>hybrid</h5>
         <img src="./Assets/img/cardio.png" alt="cardio">
         </div>
 
-        <div class="foto">
+        <div data-aos="flip-left" class="foto">
         <h5>personalizado</h5>
         <img src="./Assets/img/gimansio.png" alt="gimansio">
         </div>
         </div>
-        <button>
+        <button data-aos="zoom-out-right">
             <a href="./Assets/pages/clases.html">unite a strive</a>
         </button>
     </section>
@@ -113,5 +114,9 @@
         </li>
     </ul>
 </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

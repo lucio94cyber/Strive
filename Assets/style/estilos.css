@@ -226,9 +226,10 @@ body {
 }
 
 footer {
+  background-image: url(../img/fondo_footer.png);
   display: flex;
   justify-content: center;
-  margin-top: 130px;
+  padding: 20px;
 }
 footer ul {
   display: flex;
