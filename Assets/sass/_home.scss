@@ -148,6 +148,87 @@
     }
     }
     }
+    button{position: relative;
+        background-image: url(../img/fondo_boton2.png);
+        padding: 20px;
+        transition: transform 0.5s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        a{
+            display: inline-block;
+            font-size: 1.5rem;
+            text-decoration: none;
+            font-weight: 300;
+            color: v.$colorsegundaletra;
+            transition: transform 0.5s ease-in-out;
+            &:hover{
+                transform: scale(1.1)
+                ;color: #F5C542;
+                
+            }
+
+        }
+    }
+}
+
+.materiales_home{
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    align-items: center;
+
+    h6{
+        position: absolute;
+        color: v.$colorbotonprimero;
+        top: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size:2rem;
+        text-shadow: 0 0 10px black;
+    
+
+    }
+    p{
+        position: absolute;
+        color: v.$colorprimeroletra;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+        text-shadow: 0 0 10px black;
+
+    }
+
+    button{
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url(../img/fondo_boton2.png);
+        }
+
+        a{
+            padding: 10px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: v.$colorprimeroletra;
+            &:hover{
+                color: v.$colorbotonprimero;
+            }
+
+        }
+    }
+    .foto_materiales{
+        display: flex;
+        width: 100%;
+    img{
+        width: 50%;
+        height: 400px;
+        object-fit: cover;
+
+    }
 }
 
 

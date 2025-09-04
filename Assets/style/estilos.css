@@ -141,6 +141,78 @@ body {
 .clases .clases_fotos .foto img:hover {
   filter: brightness(1.3);
 }
+.clases button {
+  position: relative;
+  background-image: url(../img/fondo_boton2.png);
+  padding: 20px;
+  transition: transform 0.5s ease-in-out;
+}
+.clases button:hover {
+  transform: scale(1.1);
+}
+.clases button a {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 300;
+  color: #FAF9F6;
+  transition: transform 0.5s ease-in-out;
+}
+.clases button a:hover {
+  transform: scale(1.1);
+  color: #F5C542;
+}
+
+.materiales_home {
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  align-items: center;
+}
+.materiales_home h6 {
+  position: absolute;
+  color: #F5C542;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  text-shadow: 0 0 10px black;
+}
+.materiales_home p {
+  position: absolute;
+  color: #F5F5F5;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  text-shadow: 0 0 10px black;
+}
+.materiales_home button {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(../img/fondo_boton2.png);
+}
+.materiales_home a {
+  padding: 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #F5F5F5;
+}
+.materiales_home a:hover {
+  color: #F5C542;
+}
+
+.foto_materiales {
+  display: flex;
+  width: 100%;
+}
+.foto_materiales img {
+  width: 50%;
+  height: 400px;
+  object-fit: cover;
+}
 
 .whatsapp {
   position: fixed;
