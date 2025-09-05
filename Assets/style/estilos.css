@@ -19,9 +19,8 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  height: 90vh;
   padding: 20px;
-  gap: 10px;
 }
 .home h2 {
   max-width: 800px;
@@ -58,7 +57,11 @@ body {
 .foto_fitness {
   display: flex;
   justify-content: space-around;
-  margin: 30px;
+  background-image: url(../img/fondo_fitnes.png);
+  background-position: center;
+  background-size: 80%;
+  margin: 0;
+  padding: 20px;
 }
 .foto_fitness img {
   max-width: 350px;
@@ -66,6 +69,7 @@ body {
   height: auto;
   box-shadow: 0 0 5px #FAF9F6;
   border-radius: 50px;
+  margin: 10px;
 }
 .foto_fitness .texto_fitness {
   display: flex;
@@ -85,6 +89,9 @@ body {
 .levantamiento {
   display: flex;
   justify-content: space-around;
+  background-image: url(../img/fondo_levantamiento.png);
+  background-size: 80%;
+  padding: 20px;
 }
 .levantamiento img {
   max-width: 350px;
@@ -92,6 +99,7 @@ body {
   height: auto;
   box-shadow: 0 0 5px #FAF9F6;
   border-radius: 50px;
+  margin: 10px;
 }
 .levantamiento .texto_levantamiento {
   display: flex;
@@ -114,6 +122,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(../img/fondo_clases.png);
 }
 .clases h4 {
   font-size: 3.5rem;
@@ -150,7 +159,8 @@ body {
 .clases button {
   position: relative;
   background-image: url(../img/fondo_boton2.png);
-  padding: 20px;
+  padding: 15px;
+  margin: 10px;
   transition: transform 0.5s ease-in-out;
 }
 .clases button:hover {
@@ -172,7 +182,6 @@ body {
 .materiales_home {
   display: flex;
   position: relative;
-  margin-top: 20px;
   align-items: center;
 }
 .materiales_home h6 {
