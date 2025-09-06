@@ -18,13 +18,35 @@ body {
   grid-template-columns: 1fr 2fr;
 }
 .pagina_clases h2 {
-  font-size: 3.5rem;
+  font-size: 4.5rem;
+  color: #F5C542;
+  margin: 5px;
+  text-shadow: 0 0 20px black;
+}
+.pagina_clases button {
+  background-image: url(../img/fondo_boton2.png);
+  padding: 15px;
+  margin-top: 5px;
+  max-width: 250px;
+  margin: 10px;
+}
+.pagina_clases button a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FBF6F0;
+  font-size: 1.5rem;
+  text-shadow: 0 0 20px black;
+  transition: transform 0.5s ease-in-out;
+}
+.pagina_clases button a:hover {
+  transform: scale(1.1);
   color: #F5C542;
 }
 .pagina_clases ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   max-width: 300px;
+  gap: 100px;
 }
 .pagina_clases ul .crossfit_clase {
   grid-column: 1/2;
@@ -35,6 +57,20 @@ body {
   width: 300px;
   height: 400px;
   object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #252525;
+  transition: all 0.2s ease-in-out;
+}
+.pagina_clases ul .crossfit_clase img:hover {
+  filter: brightness(1.2);
+}
+.pagina_clases ul .crossfit_clase h3 {
+  font-size: 2rem;
+  color: #F5C542;
+}
+.pagina_clases ul .crossfit_clase p {
+  font-size: 1.2rem;
+  color: #FAF9F6;
 }
 .pagina_clases ul .hybrid_clase {
   grid-column: 2/3;
@@ -45,6 +81,20 @@ body {
   width: 300px;
   height: 400px;
   object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #252525;
+  transition: all 0.2s ease-in-out;
+}
+.pagina_clases ul .hybrid_clase img:hover {
+  filter: brightness(1.2);
+}
+.pagina_clases ul .hybrid_clase h3 {
+  font-size: 2rem;
+  color: #F5C542;
+}
+.pagina_clases ul .hybrid_clase p {
+  font-size: 1.2rem;
+  color: #FAF9F6;
 }
 .pagina_clases ul .levantamiento_clase {
   grid-column: 1/2;
@@ -55,6 +105,20 @@ body {
   width: 300px;
   height: 400px;
   object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #252525;
+  transition: all 0.2s ease-in-out;
+}
+.pagina_clases ul .levantamiento_clase img:hover {
+  filter: brightness(1.2);
+}
+.pagina_clases ul .levantamiento_clase h3 {
+  font-size: 2rem;
+  color: #F5C542;
+}
+.pagina_clases ul .levantamiento_clase p {
+  font-size: 1.2rem;
+  color: #FAF9F6;
 }
 .pagina_clases ul .gimansio_clase {
   grid-column: 2/3;
@@ -65,7 +129,22 @@ body {
   width: 300px;
   height: 400px;
   object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #252525;
+  transition: all 0.2s ease-in-out;
 }
+.pagina_clases ul .gimansio_clase img:hover {
+  filter: brightness(1.2);
+}
+.pagina_clases ul .gimansio_clase h3 {
+  font-size: 2rem;
+  color: #F5C542;
+}
+.pagina_clases ul .gimansio_clase p {
+  font-size: 1.2rem;
+  color: #FAF9F6;
+}
+
 .home {
   display: flex;
   justify-content: space-around;
