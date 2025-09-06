@@ -1,1 +1,82 @@
 @use "variables" as v;
+
+.pagina_clases{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    h2{
+        font-size: 3.5rem;
+        color: v.$colorbotonprimero;
+
+    }
+    button{
+
+        a{
+
+        }
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        max-width: 300px;
+
+        .crossfit_clase{
+            grid-column: 1/2;
+            padding: 20px;
+            list-style: none;
+            
+            img{
+                width: 300px;
+                height: 400px;
+                object-fit: cover;}
+                h3{
+                    }
+                    p{
+                    }
+                }
+
+                .hybrid_clase{
+                    grid-column: 2/3;
+                    padding: 20px;
+                    list-style: none;
+            img{
+                width: 300px;
+                height: 400px;
+                object-fit: cover;}
+                h3{ }
+                    
+                    p{ }
+                    }
+                .levantamiento_clase{
+                    grid-column: 1/2;
+                    padding: 20px;
+                    list-style: none;
+            img{
+                width: 300px;
+                height: 400px;
+                object-fit: cover;
+            }
+                h3{
+                    
+                }
+                    p{
+
+                    }
+                }
+                .gimansio_clase{
+                    grid-column: 2/3;
+                    list-style: none;
+                    padding: 20px;
+            img{
+                width: 300px;
+                height: 400px;
+                object-fit: cover;
+            }
+                h3{
+            }
+                                p{
+                    }
+        }
+    }
+}

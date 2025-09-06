@@ -13,6 +13,59 @@ body {
   background-size: 100%;
 }
 
+.pagina_clases {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.pagina_clases h2 {
+  font-size: 3.5rem;
+  color: #F5C542;
+}
+.pagina_clases ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 300px;
+}
+.pagina_clases ul .crossfit_clase {
+  grid-column: 1/2;
+  padding: 20px;
+  list-style: none;
+}
+.pagina_clases ul .crossfit_clase img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+.pagina_clases ul .hybrid_clase {
+  grid-column: 2/3;
+  padding: 20px;
+  list-style: none;
+}
+.pagina_clases ul .hybrid_clase img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+.pagina_clases ul .levantamiento_clase {
+  grid-column: 1/2;
+  padding: 20px;
+  list-style: none;
+}
+.pagina_clases ul .levantamiento_clase img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
+.pagina_clases ul .gimansio_clase {
+  grid-column: 2/3;
+  list-style: none;
+  padding: 20px;
+}
+.pagina_clases ul .gimansio_clase img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+}
 .home {
   display: flex;
   justify-content: space-around;
