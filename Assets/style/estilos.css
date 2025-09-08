@@ -150,6 +150,42 @@ body {
   color: #FAF9F6;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .pagina_clases {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .pagina_clases h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 3rem;
+  }
+  .pagina_clases button {
+    padding: 5px;
+  }
+  .pagina_clases button a {
+    font-size: 1.2rem;
+  }
+  .pagina_clases ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+  }
+  .pagina_clases ul li img {
+    width: 100%;
+    height: 100%;
+  }
+  .pagina_clases ul li h3 {
+    text-align: center;
+  }
+  .pagina_clases ul li p {
+    text-align: center;
+    text-shadow: 0 0 10px black;
+  }
+}
 .home {
   display: flex;
   justify-content: space-around;
@@ -193,13 +229,15 @@ body {
 
 @media (min-width: 320px) and (max-width: 430px) {
   .home {
-    max-height: 200px;
+    max-height: 250px;
+    gap: 15px;
   }
   .home h2 {
     font-size: 2rem;
-    text-shadow: none;
+    margin-top: 10px;
   }
   .home .boton {
+    margin-top: 20px;
     display: flex;
   }
   .home .boton button a {
@@ -247,7 +285,9 @@ body {
     align-items: center;
   }
   .foto_fitness img {
-    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
   }
   .foto_fitness .texto_fitness {
     display: flex;
@@ -302,7 +342,9 @@ body {
     background-size: cover;
   }
   .levantamiento img {
-    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
   }
   .levantamiento .texto_levantamiento h3 {
     text-shadow: 0 0 10px rgb(94, 85, 85);
@@ -384,11 +426,17 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .clases .clases_fotos .foto {
+    display: flex;
+  }
   .clases .clases_fotos .foto h5 {
     font-size: 1.5rem;
   }
   .clases .clases_fotos .foto img {
+    width: 100%;
+    height: 100%;
     padding: 0px;
+    margin: 0 auto;
     border-radius: 0;
   }
   .clases button {
@@ -556,6 +604,7 @@ header ul li a:hover {
   grid-template-rows: 1fr;
   background: none; /* sacamos el fondo directo */
   overflow: hidden; /* para que no se salga el pseudo-elemento */
+  min-height: 100vh;
 }
 .main_material::before {
   content: ""; /*para que se aplique*/
@@ -568,7 +617,8 @@ header ul li a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: blur(8px); /* ajustá el nivel de desenfoque */
+  filter: blur(10px); /* ajustá el nivel de desenfoque */
+  transform: scale(1.1);
   z-index: -1; /* que quede detrás del contenido */
 }
 .main_material h2 {
@@ -602,6 +652,25 @@ header ul li a:hover {
 .main_material ul li img:hover {
   transform: scale(1.2);
   filter: contrast(1.4);
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  .main_material {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .main_material h2 {
+    font-size: 3rem;
+  }
+  .main_material ul {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  }
+  .main_material ul li img {
+    max-width: 94vw;
+    max-height: 60vh;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */

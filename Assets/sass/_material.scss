@@ -7,6 +7,7 @@
         grid-template-rows: 1fr;
         background: none;/* sacamos el fondo directo */
         overflow: hidden;/* para que no se salga el pseudo-elemento */
+        min-height:100vh;
 
         &::before{
             content: ""; /*para que se aplique*/
@@ -19,7 +20,8 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            filter: blur(8px);/* ajustá el nivel de desenfoque */
+            filter: blur(10px);/* ajustá el nivel de desenfoque */
+            transform: scale(1.1); // 🔑 agranda un poco el fondo
             z-index: -1; /* que quede detrás del contenido */
         }
 
@@ -59,6 +61,32 @@
                     transform: scale(1.2);
                     filter:contrast(1.4)
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 430px){
+    .main_material{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        &::before{
+
+        }
+        h2{
+            font-size: 3rem;
+
+        }
+        ul{
+            grid-template-columns: 1fr;
+            margin-top: 10px;
+            li{
+                h3{}
+                    img{
+                        max-width: 94vw;
+                        max-height: 60vh;
+                    }
             }
         }
     }
