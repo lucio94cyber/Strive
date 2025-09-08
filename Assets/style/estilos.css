@@ -197,7 +197,7 @@ body {
   }
   .home h2 {
     font-size: 2rem;
-    text-shadow: 0 0 10px #5c5c5b;
+    text-shadow: none;
   }
   .home .boton {
     display: flex;
@@ -299,7 +299,7 @@ body {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
-    background-size: 100%;
+    background-size: cover;
   }
   .levantamiento img {
     max-width: 250px;
@@ -377,6 +377,7 @@ body {
 
 @media (min-width: 320px) and (max-width: 430px) {
   .clases h4 {
+    margin-top: 10px;
     font-size: 3rem;
   }
   .clases .clases_fotos {
@@ -387,6 +388,7 @@ body {
     font-size: 1.5rem;
   }
   .clases .clases_fotos .foto img {
+    padding: 0px;
     border-radius: 0;
   }
   .clases button {
@@ -450,7 +452,7 @@ body {
     text-align: center;
     font-size: 2rem;
     top: 30%;
-    text-shadow: 0 0 10px rgb(94, 85, 85);
+    text-shadow: none;
   }
   .materiales_home p {
     text-align: center;
