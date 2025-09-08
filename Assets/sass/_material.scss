@@ -71,9 +71,6 @@
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
-        &::before{
-
-        }
         h2{
             font-size: 3rem;
 
@@ -82,7 +79,6 @@
             grid-template-columns: 1fr;
             margin-top: 10px;
             li{
-                h3{}
                     img{
                         max-width: 94vw;
                         max-height: 60vh;
