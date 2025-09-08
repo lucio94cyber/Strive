@@ -50,7 +50,7 @@
         max-height: 200px;
         h2{
             font-size: 2rem;
-            text-shadow: 0 0 10px #5c5c5b;
+            text-shadow: none;
         }
         .boton{
             display: flex;
@@ -361,7 +361,7 @@
             text-align: center;
             font-size: 2rem;
             top:30%;
-            text-shadow: 0 0 10px rgb(94, 85, 85);
+            text-shadow:none;
         }
         p{
             text-align: center;
