@@ -1,1 +1,65 @@
 @use "variables" as v;
+
+
+.main_material{
+        position: relative;
+        display: grid;
+        grid-template-rows: 1fr;
+        background: none;/* sacamos el fondo directo */
+        overflow: hidden;/* para que no se salga el pseudo-elemento */
+
+        &::before{
+            content: ""; /*para que se aplique*/
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url(../img/fondo_pagina2.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            filter: blur(8px);/* ajustá el nivel de desenfoque */
+            z-index: -1; /* que quede detrás del contenido */
+        }
+
+    h2{
+        display: grid;
+        grid-row: 1/2;
+        justify-content:center;
+        font-size: 4.5rem;
+        color: v.$colorbotonprimero;
+        text-shadow: 0 0 20px black;
+        
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        list-style: none;
+        align-items: center;
+
+        li{
+
+            h3{
+                color: v.$colorbotonprimero;
+                font-size: 2rem;
+                text-shadow: 0 0 10px black;
+            }
+
+            img{
+                max-height: 350px;
+                object-fit: cover;
+                padding: 40px;
+                border-radius: 50px;
+                box-shadow: 0 0 10 black;
+                transition: transform 0.2s ease-in-out;
+                &:hover{
+                    transform: scale(1.2);
+                    filter:contrast(1.4)
+                }
+            }
+        }
+    }
+}

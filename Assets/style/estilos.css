@@ -13,6 +13,11 @@ body {
   background-size: 100%;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  body {
+    background-size: 200%;
+  }
+}
 .pagina_clases {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -186,6 +191,20 @@ body {
   transform: scale(1.1);
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .home {
+    max-height: 200px;
+  }
+  .home h2 {
+    font-size: 2rem;
+  }
+  .home .boton {
+    display: flex;
+  }
+  .home .boton button a {
+    font-size: 1rem;
+  }
+}
 .foto_fitness {
   display: flex;
   justify-content: space-around;
@@ -218,6 +237,29 @@ body {
   color: #FAF9F6;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .foto_fitness {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .foto_fitness img {
+    max-width: 250px;
+  }
+  .foto_fitness .texto_fitness {
+    display: flex;
+    text-align: center;
+  }
+  .foto_fitness .texto_fitness h3 {
+    text-shadow: 0 0 10px black;
+    font-size: 2rem;
+  }
+  .foto_fitness .texto_fitness p {
+    text-shadow: 0 0 10px black;
+    font-size: 1.2rem;
+  }
+}
 .levantamiento {
   display: flex;
   justify-content: space-around;
@@ -249,6 +291,26 @@ body {
   max-width: 400px;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .levantamiento {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    background-size: 100%;
+  }
+  .levantamiento img {
+    max-width: 250px;
+  }
+  .levantamiento .texto_levantamiento h3 {
+    font-size: 2rem;
+    text-shadow: 0 0 10px black;
+  }
+  .levantamiento .texto_levantamiento p {
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px black;
+  }
+}
 .clases {
   display: flex;
   flex-direction: column;
@@ -311,6 +373,27 @@ body {
   color: #F5C542;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .clases h4 {
+    font-size: 3rem;
+  }
+  .clases .clases_fotos {
+    display: flex;
+    flex-direction: column;
+  }
+  .clases .clases_fotos .foto h5 {
+    font-size: 1.5rem;
+  }
+  .clases .clases_fotos .foto img {
+    border-radius: 0;
+  }
+  .clases button {
+    padding: 10px;
+  }
+  .clases button a {
+    font-size: 1rem;
+  }
+}
 .materiales_home {
   display: flex;
   position: relative;
@@ -350,17 +433,34 @@ body {
 .materiales_home a:hover {
   color: #F5C542;
 }
-
-.foto_materiales {
+.materiales_home .foto_materiales {
   display: flex;
   width: 100%;
 }
-.foto_materiales img {
+.materiales_home .foto_materiales img {
   width: 50%;
   height: 400px;
   object-fit: cover;
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  .materiales_home h6 {
+    text-align: center;
+    font-size: 2rem;
+    top: 30%;
+  }
+  .materiales_home p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .materiales_home button {
+    top: 80%;
+    padding: 5px;
+  }
+  .materiales_home button a {
+    font-size: 1.2rem;
+  }
+}
 .whatsapp {
   position: fixed;
   bottom: 20px; /*20 píxeles desde el borde inferior de la ventana.*/
@@ -425,6 +525,78 @@ header ul li a {
 header ul li a:hover {
   transform: scale(1.2);
   color: #F5C542;
+}
+
+@media (min-width: 320px) and (max-width: 430px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+  }
+  header img {
+    width: 150px;
+  }
+  header h1 {
+    display: none;
+  }
+  header ul li a {
+    font-size: 1.2rem;
+    text-shadow: 0 0 10px black;
+  }
+}
+.main_material {
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr;
+  background: none; /* sacamos el fondo directo */
+  overflow: hidden; /* para que no se salga el pseudo-elemento */
+}
+.main_material::before {
+  content: ""; /*para que se aplique*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fondo_pagina2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  filter: blur(8px); /* ajustá el nivel de desenfoque */
+  z-index: -1; /* que quede detrás del contenido */
+}
+.main_material h2 {
+  display: grid;
+  grid-row: 1/2;
+  justify-content: center;
+  font-size: 4.5rem;
+  color: #F5C542;
+  text-shadow: 0 0 20px black;
+}
+.main_material ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  list-style: none;
+  align-items: center;
+}
+.main_material ul li h3 {
+  color: #F5C542;
+  font-size: 2rem;
+  text-shadow: 0 0 10px black;
+}
+.main_material ul li img {
+  max-height: 350px;
+  object-fit: cover;
+  padding: 40px;
+  border-radius: 50px;
+  box-shadow: 0 0 10 black;
+  transition: transform 0.2s ease-in-out;
+}
+.main_material ul li img:hover {
+  transform: scale(1.2);
+  filter: contrast(1.4);
 }
 
 /*# sourceMappingURL=estilos.css.map */

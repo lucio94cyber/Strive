@@ -45,6 +45,26 @@
 }
 }
 
+@media (min-width: 320px) and (max-width: 430px){
+    .home{
+        max-height: 200px;
+        h2{
+            font-size: 2rem;
+        }
+        .boton{
+            display: flex;
+            button{
+
+                a{
+                    font-size: 1rem;
+
+                }
+            }
+        }
+
+    }
+}
+
 .foto_fitness{
     display: flex;
     justify-content: space-around;
@@ -83,6 +103,34 @@
     }
 }
 
+@media (min-width: 320px) and (max-width: 430px){
+    .foto_fitness{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            max-width: 250px;
+
+        }
+        .texto_fitness{
+            display: flex;
+            text-align: center;
+            h3{
+                text-shadow: 0 0 10px black;
+                font-size: 2rem;
+
+            }
+            p{
+                text-shadow: 0 0 10px black;
+                font-size: 1.2rem;
+                
+            }
+        }
+    }
+}
+
 .levantamiento{
     display: flex;
     justify-content: space-around;
@@ -116,6 +164,32 @@
             max-width: 400px;
             
 
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 430px){
+    .levantamiento{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        background-size: 100%;
+        img{
+            max-width: 250px;
+
+        }
+        .texto_levantamiento{
+            
+            h3{
+                font-size: 2rem;
+                text-shadow: 0 0 10px black;
+            }
+            p{
+                font-size: 1.5rem;
+                text-shadow: 0 0 10px black;
+
+            }
         }
     }
 }
@@ -190,6 +264,36 @@
     }
 }
 
+@media (min-width: 320px) and (max-width: 430px){
+    .clases{
+
+        h4{
+            font-size: 3rem;
+        }
+        .clases_fotos{
+            display: flex;
+            flex-direction: column;
+
+            .foto{
+
+                h5{
+                    font-size: 1.5rem;
+                }
+                img{
+                    border-radius: 0;
+                }
+            }
+        }
+        button{
+            padding: 10px;
+            a{
+                font-size: 1rem;
+
+            }
+        }
+    }
+}
+
 .materiales_home{
     display: flex;
     position: relative;
@@ -235,7 +339,7 @@
             }
 
         }
-    }
+    
     .foto_materiales{
         display: flex;
         width: 100%;
@@ -244,6 +348,39 @@
         height: 400px;
         object-fit: cover;
 
+    }
+}
+}
+
+@media (min-width: 320px) and (max-width: 430px){
+    .materiales_home{
+
+        h6{
+            text-align: center;
+            font-size: 2rem;
+            top:30%;
+        }
+        p{
+            text-align: center;
+            font-size: 1.5rem;
+
+        }
+        button{
+            top: 80%;
+            padding: 5px;
+
+            a{
+                font-size: 1.2rem;
+
+            }
+        }
+    }
+    .foto_materiales{
+
+        img{
+
+
+        }
     }
 }
 

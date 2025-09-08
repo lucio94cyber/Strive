@@ -43,3 +43,30 @@ header{
     }
     
 }
+
+@media (min-width: 320px) and (max-width: 430px){
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+
+         img{
+            width: 150px;
+
+         }
+         h1{display: none;
+         }
+
+         ul{
+
+            li{
+                a{
+                    font-size: 1.2rem;
+                    text-shadow:  0 0 10px black;
+
+                }
+            }
+         }
+    }
+}
