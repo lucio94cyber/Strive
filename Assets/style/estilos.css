@@ -197,12 +197,14 @@ body {
   }
   .home h2 {
     font-size: 2rem;
+    text-shadow: 0 0 10px #5c5c5b;
   }
   .home .boton {
     display: flex;
   }
   .home .boton button a {
     font-size: 1rem;
+    text-shadow: 0 0 10px #5c5c5b;
   }
 }
 .foto_fitness {
@@ -252,7 +254,7 @@ body {
     text-align: center;
   }
   .foto_fitness .texto_fitness h3 {
-    text-shadow: 0 0 10px black;
+    text-shadow: 0 0 10px rgb(94, 85, 85);
     font-size: 2rem;
   }
   .foto_fitness .texto_fitness p {
@@ -303,8 +305,8 @@ body {
     max-width: 250px;
   }
   .levantamiento .texto_levantamiento h3 {
+    text-shadow: 0 0 10px rgb(94, 85, 85);
     font-size: 2rem;
-    text-shadow: 0 0 10px black;
   }
   .levantamiento .texto_levantamiento p {
     font-size: 1.5rem;
@@ -448,6 +450,7 @@ body {
     text-align: center;
     font-size: 2rem;
     top: 30%;
+    text-shadow: 0 0 10px rgb(94, 85, 85);
   }
   .materiales_home p {
     text-align: center;
