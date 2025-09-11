@@ -38,8 +38,22 @@
         <img data-aos="fade-down-right" src="../img/contacto_foto.png" alt="contacto_foto">
         </div>
 
-<iframe data-aos="zoom-in-left" src="https://docs.google.com/forms/d/e/1FAIpQLSdXrmMnPXvyzmMEacARqFDN1O7bDPJ9DWgxi4v3SOAEKP2pzA/viewform?embedded=true" 
-frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <form action="https://formspree.io/f/xdkljoan" method="POST" accept-charset="UTF-8">
+            <label>nombre y apellido</label>
+            <input type="text" name="nombre y apellido" placeholder="Nombre y Apellido" required>
+            <label>telefono</label>
+            <input type="number" name="telefono" placeholder="telefono" required>
+            <label>correo electronico</label>
+            <input type="email" name="mail" placeholder="dejanos tu correo para contactarte" required>
+            <label>mensaje</label>
+            <textarea name="mensaje" placeholder="envianos tu consulta" required></textarea>
+
+            <div class="envio_reset">
+                <input type="submit" value="enviar">
+                <input type="reset" value="reset">
+            </div>
+        </form>
+
 
     </main>
     

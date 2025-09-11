@@ -528,8 +528,6 @@ body {
 main {
   display: flex;
   justify-content: space-around;
-}
-main .titulos_contacto {
   margin-top: 20px;
 }
 main .titulos_contacto h1 {
@@ -553,13 +551,75 @@ main .titulos_contacto img {
   width: 300px;
   height: 400px;
   border-radius: 5px;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 5px white;
 }
-main iframe {
-  width: 600px;
-  height: 700px;
+main form {
+  display: flex;
+  flex-direction: column;
+}
+main form label {
+  font-size: 3rem;
+  color: #F5C542;
+  text-shadow: 0 0 10px black;
+}
+main form input {
+  width: 250px;
+  height: 40px;
+}
+main form textarea {
+  height: 70px;
+}
+main form .envio_reset {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+main form .envio_reset input {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: black;
+  color: #F5C542;
+  transition: transform 0.2s ease-in;
+}
+main form .envio_reset input:hover {
+  color: rgb(0, 0, 0);
+  background-color: #F5C542;
+  transform: scaleX(1.1);
+  filter: brightness(1.2) saturate(1.5);
 }
 
+@media (min-width: 320px) and (max-width: 430px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  main .titulos_contacto {
+    margin: 10px;
+  }
+  main .titulos_contacto h1 {
+    font-size: 2rem;
+  }
+  main .titulos_contacto h2 {
+    font-size: 1.8rem;
+  }
+  main .titulos_contacto p {
+    font-size: 1.2rem;
+  }
+  main .titulos_contacto img {
+    margin: 0;
+    margin-top: 20px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  main form {
+    padding: 10px;
+  }
+  main form label {
+    font-size: 1.5rem;
+  }
+}
 footer {
   background-image: url(../img/fondo_footer.png);
   display: flex;
