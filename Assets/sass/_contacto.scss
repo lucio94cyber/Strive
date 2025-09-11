@@ -21,6 +21,8 @@ main{
             color: v.$colorbotonprimero;
             font-size: 1.5rem;
             text-shadow: 0 0 5px rgb(19, 18, 18);
+            text-decoration: none;
+            
         }
         img{
             display: block;
@@ -93,8 +95,7 @@ main{
             img{
                 margin: 0;
                 margin-top: 20px;
-                width: 300px;
-                height: 200px;
+                width: 100%;
                 object-fit: cover;
             }
         }
